@@ -55,3 +55,10 @@ public:
             addRandomToHead();                                                                                      //jesli tak to dodaje element na początek listy
             return;
         }
+
+        Node* current = head;
+        int pos = 0;
+        while (current && pos < index - 1) {                                                                        //przechodzi przez listę żeby znaleźć element na pozycji (index - 1)
+            current = current->next;
+            pos++;
+        }
