@@ -82,7 +82,7 @@ public:
         current->next = newNode;
     }
 
-    void removeFromHead() {                                                                                         //usuwamy element z początlku listy
+    void removeFromHead() {                                                                                         //usuwamy element z początku listy
         if (!head) return;                                                                                          //sprawdzamy czy lista nie jest pusta
         Node* temp = head;
         head = head->next;                                                                                          //ustawia head na następny element a jeśli lista ma więcej niż jeden element ustawia prev nowego pierwszego elementu na nullptr
@@ -91,6 +91,19 @@ public:
         }
         else {
             back = nullptr;                                                                                         //jeśli usuniety element był jedynym na liscie back również będzie na nullptr
+        }
+        delete temp;
+    }
+
+    void removeFromBack() {                                                                                         //usuwamy element z końca listy
+        if (!back) return;                                                                                          //działa podobnie do removeFromHead ale usuwa elementy z końca listy
+        Node* temp = back;
+        back = back->prev;
+        if (back) {
+            back->next = nullptr;
+        }                                                                                                           //jeśli back zostaje usunięte, back będzie na nullptr co oznacza że lista jest pusta
+        else {
+            head = nullptr;
         }
         delete temp;
     }
