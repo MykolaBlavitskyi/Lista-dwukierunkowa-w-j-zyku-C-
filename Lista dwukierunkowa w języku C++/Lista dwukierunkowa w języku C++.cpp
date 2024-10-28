@@ -152,3 +152,14 @@ public:
         }
         cout << endl;
     }
+
+    void clear() {                                                                                                  //czyszczymy całą listę
+        while (head) {
+            removeFromHead();                                                                                       //używając removeFromHead() w pętli usuwamy każdy element zaczynając od początkowego
+        }
+    }
+
+    ~DubleLinkedList() {                                                                                            //destruktor automatucznie wywołuje i usuwa listę
+        clear();
+    }
+};
