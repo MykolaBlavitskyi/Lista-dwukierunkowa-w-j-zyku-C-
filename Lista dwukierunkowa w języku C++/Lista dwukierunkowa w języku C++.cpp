@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿﻿#include <iostream>
 #include <cstdlib>                                                                                                  //#include <cstdlib> - dla rand() i srand()
 #include <ctime>                                                                                                    //#include <ctime> - dla time()
 using namespace std;
@@ -21,7 +21,6 @@ public:
         srand(static_cast<unsigned>(time(nullptr)));                                                                //ustawiamy tak aby za każdym uruchomieniem programu liczby były inne
     }                                                                                                               //time(nullptr) zwraca aktualny czas co oznacza że liczby są unikalne
 
-
     void addRandomToHead() {                                                                                        //dodaje losowy element na początek listy
         int value = rand() % 100;                                                                                   //losowanie w zakresie 0-99
         Node* newNode = new Node(value);                                                                            //tworzy nowy element o wygenerowanej wartosci
@@ -34,7 +33,6 @@ public:
             head = newNode;                                                                                         //a wskaźnik prev starej głowy wskazuje na newNode
         }
     }
-
 
     void addRandomToBack() {                                                                                        //dodajemy losowy element na koniec listy
         int value = rand() % 100;                                                                                   //losujemy liczbe w zakresie 0-99
@@ -71,7 +69,7 @@ public:
         Node* newNode = new Node(value);
         newNode->next = current->next;
         newNode->prev = current;
-                                                                                                                    //jesli element jest dodawany na koncu listy ustawia nowy ostatni element back
+        //jesli element jest dodawany na koncu listy ustawia nowy ostatni element back
         if (current->next) {
             current->next->prev = newNode;
         }
@@ -82,7 +80,7 @@ public:
         current->next = newNode;
     }
 
-    void removeFromHead() {                                                                                         //usuwamy element z początku listy
+    void removeFromHead() {                                                                                         //usuwamy element z początlku listy
         if (!head) return;                                                                                          //sprawdzamy czy lista nie jest pusta
         Node* temp = head;
         head = head->next;                                                                                          //ustawia head na następny element a jeśli lista ma więcej niż jeden element ustawia prev nowego pierwszego elementu na nullptr
@@ -133,7 +131,6 @@ public:
 
         delete current;
     }
-
 
     void display() {                                                                                                //wyswietlić całą liste
         Node* current = head;                                                                                       //przechodzimy przez liste od head do back pokazując data dla każdego elementu
