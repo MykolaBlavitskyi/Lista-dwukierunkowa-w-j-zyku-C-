@@ -1,0 +1,228 @@
+\doxysection{Duble\+Linked\+List Class Reference}
+\hypertarget{class_duble_linked_list}{}\label{class_duble_linked_list}\index{DubleLinkedList@{DubleLinkedList}}
+
+
+Klasa reprezentująca listę dwukierunkową.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_duble_linked_list_a117b78d52ccc3a6470fa57b984e25212}{Duble\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy, inicjalizujący pustą listę. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a5daccffb3b86b390ac400d1189e0bb61}{add\+Random\+To\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Dodaje losowy element na początek listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a8006f039c59a5293e795d8b39576e2de}{add\+Random\+To\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Dodaje losowy element na koniec listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a454cb25483c2752d8c5d087aca3d44db}{insert\+Random\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Wstawia losowy element pod wskazany indeks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a98bb1cde2467c3078125c42369514ee2}{remove\+From\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Usuwa element z początku listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_ac95efb9b6919a5ab9aed6168ca8a3e1c}{remove\+From\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Usuwa element z końca listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a7a94131fb543330c29d0cebd85a178bc}{remove\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Usuwa element pod danym indeksem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a5e5fe28e26e97b54415ddcbef54421c2}{display}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla całą listę. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_aaa9cab0dae6f2624ce2c3664d9109b8a}{display\+Reverse}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla listę w odwrotnej kolejności. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_duble_linked_list_a8fa48d6e321db57e7b5aeb99ae02ebdf}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Czyści całą listę. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_duble_linked_list_a9e1054fec7e602841093d985ce431aa5}{\texorpdfstring{$\sim$}{\string~}\+Duble\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, który automatycznie wywołuje funkcję czyszczącą. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca listę dwukierunkową. 
+
+Klasa obsługuje operacje dodawania, usuwania, wyświetlania i czyszczenia elementów listy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_duble_linked_list_a117b78d52ccc3a6470fa57b984e25212}\index{DubleLinkedList@{DubleLinkedList}!DubleLinkedList@{DubleLinkedList}}
+\index{DubleLinkedList@{DubleLinkedList}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DubleLinkedList()}{DubleLinkedList()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a117b78d52ccc3a6470fa57b984e25212} 
+Duble\+Linked\+List\+::\+Duble\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor klasy, inicjalizujący pustą listę. 
+
+Ustawia head i back na nullptr, ponieważ lista początkowo jest pusta. Inicjalizuje również generator liczb losowych. \texorpdfstring{$<$}{<} Ustawia ziarno dla generatora liczb losowych\Hypertarget{class_duble_linked_list_a9e1054fec7e602841093d985ce431aa5}\index{DubleLinkedList@{DubleLinkedList}!````~DubleLinkedList@{\texorpdfstring{$\sim$}{\string~}DubleLinkedList}}
+\index{````~DubleLinkedList@{\texorpdfstring{$\sim$}{\string~}DubleLinkedList}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DubleLinkedList()}{\string~DubleLinkedList()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a9e1054fec7e602841093d985ce431aa5} 
+Duble\+Linked\+List\+::\texorpdfstring{$\sim$}{\string~}\+Duble\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destruktor, który automatycznie wywołuje funkcję czyszczącą. 
+
+\texorpdfstring{$<$}{<} Czyści listę przy wywołaniu destruktora
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_duble_linked_list_a8006f039c59a5293e795d8b39576e2de}\index{DubleLinkedList@{DubleLinkedList}!addRandomToBack@{addRandomToBack}}
+\index{addRandomToBack@{addRandomToBack}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{addRandomToBack()}{addRandomToBack()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a8006f039c59a5293e795d8b39576e2de} 
+void Duble\+Linked\+List\+::add\+Random\+To\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje losowy element na koniec listy. 
+
+Generuje losową wartość i tworzy nowy węzeł, który jest dodawany na koniec listy. \texorpdfstring{$<$}{<} Losuje wartość w zakresie 0-\/99
+
+\texorpdfstring{$<$}{<} Tworzy nowy węzeł o wygenerowanej wartości
+
+\texorpdfstring{$<$}{<} Ustawia head i back na new\+Node, jeśli lista jest pusta
+
+\texorpdfstring{$<$}{<} Nowy węzeł staje się nowym ostatnim elementem
+
+\texorpdfstring{$<$}{<} Wskaźnik next starego ostatniego elementu wskazuje na nowy węzeł
+
+\texorpdfstring{$<$}{<} Ustawia nowy węzeł jako back\Hypertarget{class_duble_linked_list_a5daccffb3b86b390ac400d1189e0bb61}\index{DubleLinkedList@{DubleLinkedList}!addRandomToHead@{addRandomToHead}}
+\index{addRandomToHead@{addRandomToHead}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{addRandomToHead()}{addRandomToHead()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a5daccffb3b86b390ac400d1189e0bb61} 
+void Duble\+Linked\+List\+::add\+Random\+To\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dodaje losowy element na początek listy. 
+
+Generuje losową wartość i tworzy nowy węzeł, który jest dodawany na początek listy. \texorpdfstring{$<$}{<} Losuje wartość w zakresie 0-\/99
+
+\texorpdfstring{$<$}{<} Tworzy nowy węzeł o wygenerowanej wartości
+
+\texorpdfstring{$<$}{<} Ustawia head i back na new\+Node, jeśli lista jest pusta
+
+\texorpdfstring{$<$}{<} Nowy węzeł staje się nową głową
+
+\texorpdfstring{$<$}{<} Wskaźnik prev starej głowy wskazuje na nowy węzeł
+
+\texorpdfstring{$<$}{<} Ustawia nowy węzeł jako head\Hypertarget{class_duble_linked_list_a8fa48d6e321db57e7b5aeb99ae02ebdf}\index{DubleLinkedList@{DubleLinkedList}!clear@{clear}}
+\index{clear@{clear}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a8fa48d6e321db57e7b5aeb99ae02ebdf} 
+void Duble\+Linked\+List\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Czyści całą listę. 
+
+Usuwa wszystkie elementy z listy, używając metody \doxylink{class_duble_linked_list_a98bb1cde2467c3078125c42369514ee2}{remove\+From\+Head()}. \texorpdfstring{$<$}{<} Usuwa każdy element zaczynając od początku\Hypertarget{class_duble_linked_list_a5e5fe28e26e97b54415ddcbef54421c2}\index{DubleLinkedList@{DubleLinkedList}!display@{display}}
+\index{display@{display}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a5e5fe28e26e97b54415ddcbef54421c2} 
+void Duble\+Linked\+List\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla całą listę. 
+
+Przechodzi przez listę i wyświetla dane dla każdego elementu. \texorpdfstring{$<$}{<} Przechodzi przez listę od head do back\Hypertarget{class_duble_linked_list_aaa9cab0dae6f2624ce2c3664d9109b8a}\index{DubleLinkedList@{DubleLinkedList}!displayReverse@{displayReverse}}
+\index{displayReverse@{displayReverse}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{displayReverse()}{displayReverse()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_aaa9cab0dae6f2624ce2c3664d9109b8a} 
+void Duble\+Linked\+List\+::display\+Reverse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wyświetla listę w odwrotnej kolejności. 
+
+Przechodzi przez listę od back do head i wyświetla dane dla każdego elementu. \texorpdfstring{$<$}{<} Wyświetla dane w odwrotnej kolejności\Hypertarget{class_duble_linked_list_a454cb25483c2752d8c5d087aca3d44db}\index{DubleLinkedList@{DubleLinkedList}!insertRandomAt@{insertRandomAt}}
+\index{insertRandomAt@{insertRandomAt}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{insertRandomAt()}{insertRandomAt()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a454cb25483c2752d8c5d087aca3d44db} 
+void Duble\+Linked\+List\+::insert\+Random\+At (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wstawia losowy element pod wskazany indeks. 
+
+Generuje losową wartość i wstawia nowy węzeł w odpowiednim miejscu w liście. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks, pod którym ma być wstawiony nowy element \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Losuje wartość w zakresie 0-\/99
+
+\texorpdfstring{$<$}{<} Dodaje element na początek listy
+
+\texorpdfstring{$<$}{<} Szuka węzła na pozycji index -\/ 1
+
+\texorpdfstring{$<$}{<} Indeks jest poza zakresem
+
+\texorpdfstring{$<$}{<} Ustawia wskaźniki nowego węzła
+
+\texorpdfstring{$<$}{<} Ustawia wskaźnik prev następnego węzła
+
+\texorpdfstring{$<$}{<} Ustawia nowy węzeł jako back, jeśli jest ostatni
+
+\texorpdfstring{$<$}{<} Ustawia wskaźnik next dla węzła na nowy węzeł\Hypertarget{class_duble_linked_list_a7a94131fb543330c29d0cebd85a178bc}\index{DubleLinkedList@{DubleLinkedList}!removeAt@{removeAt}}
+\index{removeAt@{removeAt}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{removeAt()}{removeAt()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a7a94131fb543330c29d0cebd85a178bc} 
+void Duble\+Linked\+List\+::remove\+At (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa element pod danym indeksem. 
+
+Sprawdza, czy indeks jest poprawny, a następnie usuwa odpowiedni element. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Indeks elementu do usunięcia \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Usuwa element z początku listy
+
+\texorpdfstring{$<$}{<} Szuka węzła na podanym indeksie
+
+\texorpdfstring{$<$}{<} Indeks jest poza zakresem
+
+\texorpdfstring{$<$}{<} Dostosowuje wskaźniki sąsiednich węzłów
+
+\texorpdfstring{$<$}{<} Aktualizuje wskaźnik back, jeśli usuwany element to back
+
+\texorpdfstring{$<$}{<} Usuwa węzeł\Hypertarget{class_duble_linked_list_ac95efb9b6919a5ab9aed6168ca8a3e1c}\index{DubleLinkedList@{DubleLinkedList}!removeFromBack@{removeFromBack}}
+\index{removeFromBack@{removeFromBack}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{removeFromBack()}{removeFromBack()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_ac95efb9b6919a5ab9aed6168ca8a3e1c} 
+void Duble\+Linked\+List\+::remove\+From\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa element z końca listy. 
+
+Sprawdza, czy lista nie jest pusta, a następnie usuwa ostatni element. \texorpdfstring{$<$}{<} Sprawdza, czy lista nie jest pusta
+
+\texorpdfstring{$<$}{<} Ustawia back na poprzedni węzeł
+
+\texorpdfstring{$<$}{<} Ustawia wskaźnik next na nullptr
+
+\texorpdfstring{$<$}{<} Ustawia head na nullptr, jeśli lista jest pusta
+
+\texorpdfstring{$<$}{<} Usuwa stary węzeł\Hypertarget{class_duble_linked_list_a98bb1cde2467c3078125c42369514ee2}\index{DubleLinkedList@{DubleLinkedList}!removeFromHead@{removeFromHead}}
+\index{removeFromHead@{removeFromHead}!DubleLinkedList@{DubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{removeFromHead()}{removeFromHead()}}
+{\footnotesize\ttfamily \label{class_duble_linked_list_a98bb1cde2467c3078125c42369514ee2} 
+void Duble\+Linked\+List\+::remove\+From\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Usuwa element z początku listy. 
+
+Sprawdza, czy lista nie jest pusta, a następnie usuwa pierwszy element. \texorpdfstring{$<$}{<} Sprawdza, czy lista nie jest pusta
+
+\texorpdfstring{$<$}{<} Ustawia head na następny węzeł
+
+\texorpdfstring{$<$}{<} Ustawia wskaźnik prev na nullptr
+
+\texorpdfstring{$<$}{<} Ustawia back na nullptr, jeśli lista jest pusta
+
+\texorpdfstring{$<$}{<} Usuwa stary węzeł
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code1.\+cpp\end{DoxyCompactItemize}
