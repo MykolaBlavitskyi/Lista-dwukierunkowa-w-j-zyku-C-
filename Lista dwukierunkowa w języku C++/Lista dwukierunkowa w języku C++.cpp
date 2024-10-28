@@ -49,3 +49,9 @@ public:
         }
     }
 
+    void insertRandomAt(int index) {                                                                                //dodawanie losowego elementu pod wskazany indeks
+        int value = rand() % 100;                                                                                   //losowanie liczby w zakresie 0-99
+        if (index == 0) {                                                                                           //generujemy losową wartosc i sprawdzamy czy index jest równy 0
+            addRandomToHead();                                                                                      //jesli tak to dodaje element na początek listy
+            return;
+        }
