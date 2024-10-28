@@ -62,3 +62,8 @@ public:
             current = current->next;
             pos++;
         }
+
+        if (!current) {
+            cout << "Indeks poza zakresem " << endl;                                                                //jesli pozycja index jest poza zasięgiem (lista jest zbyt krótka) wypisuje błąd
+            return;
+        }
